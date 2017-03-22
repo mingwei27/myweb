@@ -9,20 +9,34 @@
     header {
       background-color:indigo;
       padding:1em;
-      . container{
       text-align:center;
     }
-    
+    .myContainer {
+      margin: 0 auto;
+      width: 1024px;
+    }
     nav  {
       background-color:silver;
-      height:50px;
+     
       color:white;
       font-size: 30px;
       padding:5px;
       margin:20px;
     
     }
-    
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 10px;
+      overflow: hidden;
+     
+   }
+
+   li {
+      float: left;
+      width: 150px;
+      //text-align: center;
+    }
     aside {
       background-color:#aaaade;
       //height:200px;
@@ -56,11 +70,24 @@
 </head>
   <body>
     <!--write your header here -->
-    <header>my header</header>
+    <header>
+       <div class="myContainer">
+         my header
+         </div>
+         </header>
     
     <!--write your nav here -->
-    <nav>my nav</nav>
-    
+    <nav><div class="myContainer">
+      <!-- my nav -->
+        <ul>
+          <li>myHouse</li>
+          <li>mySetting</li>
+          <li>myFavorits</li>
+        </ul>
+      </div>
+     
+      </nav>
+    <div class="myContainer">
     <!--write your aside here -->
     <aside  >my aside</aside>
     
@@ -72,19 +99,22 @@
             <article >my article3</article>
             <article >my article4</article>
     </section>
-    
+     </div>
    
     
    
    
     <!--write your footer here -->
-    <footer >my footer
-    <img src="static_qr_code_without_logo.jpg">
+    <footer >
+       <div class="myContainer">
+      my footer
+    <img src="static_qr_code_without_logo.jpg"style="height: 120px;padding: 10px;">
       <div id="myAddress">
      <p> ::: 更新日期：2017年03月22日<p>
      <p>校本部 高雄市84001大樹區學城路一段1號 Tel:(07)6577711</p>
      <p>醫學院區 高雄市82445燕巢區角宿里義大路8號 Tel:(07)6151100</p>
       </div>
+      </div> 
     </footer>
     </body>
 </html>
